@@ -10,6 +10,6 @@ include "phpqrcode/qrlib.php";
 // QRcode::png($str,QR_ECLEVEL_L);
 // QRcode::png($str,QR_ECLEVEL_M);
 // QRcode::png($str,QR_ECLEVEL_Q);
-QRcode::png($str);
+QRcode::png($str,"qr.png");
 
 ?>
