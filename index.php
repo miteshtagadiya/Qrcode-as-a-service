@@ -94,7 +94,7 @@
 			<form action="index.php" method="post">
 <input type="text" name="str" />
 <input type="submit" name="submit" value="submit" />
-
+</form>
 
 <?php
 
@@ -119,7 +119,6 @@ echo '<img src="'.$urlRelativeFilePath.'" />';
 }
 
 ?>
-</form>
 	<ul>
 	<li>created: 02/15/2015</li>
 	<li>latest update: 03/17/2014</li>
