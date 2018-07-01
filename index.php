@@ -91,7 +91,7 @@
 		<a href="http://codepassenger.com" class="btn btn-primary btn-large">CodePassenger</a> <a href="http://themeforest.net/user/codepassenger" class="btn btn-large">Portfolio</a> 
 	</div>
 	<hr>
-			<form action="index1.php" method="post">
+			<form action="index.php" method="post">
 <input type="text" name="str" />
 <input type="submit" name="submit" value="submit" />
 
@@ -104,13 +104,16 @@ include "phpqrcode/qrlib.php";
 
 if(isset($_POST['submit'])){
 	$str = $_POST['str'];
-$tempDir = EXAMPLE_TMP_SERVERPATH; 
+$tempDir = "Qrcode"; 
+$urlRelativeFilePath = $tempDir.$str; 
 	// // create a QR Code with this text and display it
 // QRcode::png($str);
 // QRcode::png($str,QR_ECLEVEL_L);
 // QRcode::png($str,QR_ECLEVEL_M);
 // QRcode::png($str,QR_ECLEVEL_Q);
-QRcode::png($str);
+QRcode::png($str,$urlRelativeFilePath);
+
+echo '<img src="'.$urlRelativeFilePath.'" />'; 
 
 
 }
