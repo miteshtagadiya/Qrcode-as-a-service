@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	
-	<title>GRAPE - Onepage Responsive Prallax App Landing Template | HTML5 Bootstrap</title>
+	<title>Qr-Code</title>
 	
 	<meta name="description" content="">
 	<meta name="author" content="CodePassenger">
@@ -66,7 +66,7 @@
 	<div id="documenter_sidebar">
 		<a href="#documenter_cover" id="documenter_logo"></a>
 		<ul id="documenter_nav">
-			<li><a class="current" href="#documenter_cover">Hello</a></li>
+			<li><a class="current" href="#documenter_cover">Home</a></li>
 				
 			<li><a href="#introduction" title="Introduction">Introduction</a></li>
 			<li><a href="#features" title="Features">Features</a></li>
@@ -85,7 +85,7 @@
 	</div>
 	<div id="documenter_content">
 	<section id="documenter_cover">
-	<h1>GRAPE - Onepage Responsive Prallax App Landing Template</h1>
+	<h1>Qr-Code-As-a-Service</h1>
 	<h2>HTML5 Bootstrap Landing Page</h2>
 	<div id="documenter_buttons">
 		<a href="http://codepassenger.com" class="btn btn-primary btn-large">CodePassenger</a> <a href="http://themeforest.net/user/codepassenger" class="btn btn-large">Portfolio</a> 
