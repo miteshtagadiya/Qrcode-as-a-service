@@ -94,6 +94,28 @@
 			<form action="index1.php" method="post">
 <input type="text" name="str" />
 <input type="submit" name="submit" value="submit" />
+
+
+<?php
+
+include "phpqrcode/qrlib.php";
+//include "config.php"; 
+
+
+if(isset($_POST['submit'])){
+	$str = $_POST['str'];
+$tempDir = EXAMPLE_TMP_SERVERPATH; 
+	// // create a QR Code with this text and display it
+// QRcode::png($str);
+// QRcode::png($str,QR_ECLEVEL_L);
+// QRcode::png($str,QR_ECLEVEL_M);
+// QRcode::png($str,QR_ECLEVEL_Q);
+QRcode::png($str);
+
+
+}
+
+?>
 </form>
 	<ul>
 	<li>created: 02/15/2015</li>
