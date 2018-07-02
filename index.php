@@ -93,6 +93,28 @@
 	<hr>
 			<form action="index.php" method="post">
 <input type="text" name="str" />
+Size: <select name="size">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+
+Frame size:
+<select name="frame">
+<option value="2">2</option>
+<option value="4">4</option>
+<option value="6">6</option>
+<option value="8">8</option>
+<option value="10">10</option>
+</select>
+
 <input type="submit" name="submit" value="submit" />
 </form>
 
@@ -104,6 +126,8 @@ include "phpqrcode/qrlib.php";
 
 if(isset($_POST['submit'])){
 	$str = $_POST['str'];
+	$size = $_POST['size'];
+	$frame = $_POST['frame'];
 $tempDir = "Qrcode"; 
 $urlRelativeFilePath = $tempDir.$str; 
 	// // create a QR Code with this text and display it
@@ -111,7 +135,7 @@ $urlRelativeFilePath = $tempDir.$str;
 // QRcode::png($str,QR_ECLEVEL_L);
 // QRcode::png($str,QR_ECLEVEL_M);
 // QRcode::png($str,QR_ECLEVEL_Q);
-QRcode::png($str,$urlRelativeFilePath);
+QRcode::png($str,$urlRelativeFilePath,QR_ECLEVEL_H,$size,$frame);
 
 echo '<img src="'.$urlRelativeFilePath.'" />'; 
 
