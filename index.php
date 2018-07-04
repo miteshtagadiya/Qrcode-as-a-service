@@ -141,7 +141,7 @@ QRcode::png($str,$urlRelativeFilePath,QR_ECLEVEL_H,$size,$frame);
 
 
 ?>
-<div style="background-color: grey; width: auto">
+<div style="background-color: #e6e6e6; width: 500px; margin-top: 10px; padding: 20px">
 <img src="<?php echo $urlRelativeFilePath; ?> " />
 </div>
 <?php
