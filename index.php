@@ -137,20 +137,17 @@ $urlRelativeFilePath = $tempDir.$str;
 // QRcode::png($str,QR_ECLEVEL_Q);
 QRcode::png($str,$urlRelativeFilePath,QR_ECLEVEL_H,$size,$frame);
 
-echo '<img src="'.$urlRelativeFilePath.'" />'; 
 
 
+
+?>
+<div style="background-color: grey; width: auto">
+<img src="<?php echo $urlRelativeFilePath; ?> " />
+</div>
+<?php
 }
 
 ?>
-	<ul>
-	<li>created: 02/15/2015</li>
-	<li>latest update: 03/17/2014</li>
-	<li>by: CodePassenger</li>
-	<li><a href=""></a></li>
-	<li>email: <a href="mailto:&#99;&#111;&#100;&#101;&#112;&#97;&#115;&#115;&#101;&#110;&#103;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#99;&#111;&#100;&#101;&#112;&#97;&#115;&#115;&#101;&#110;&#103;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
-	</ul>
-	<p>Thank you for purchasing our product. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!</p>
 	</section>
 	
 	<section id="introduction">
